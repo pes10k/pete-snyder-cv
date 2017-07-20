@@ -102,7 +102,7 @@
 \renewcommand{\section}{\@startsection {section}{1}{-0.3\v@margin}%
     {-3ex plus -2ex minus -1ex}%
     {1ex plus 0.5ex}%
-    {\if@secrule \makebox[0pt][l]{\hspace*{-0.3\v@margin}\rule[-0.4ex]{0.75\columnwidth}{0.5pt}}\fi\sectionnamefont}*} 
+    {\if@secrule \makebox[0pt][l]{\hspace*{-0.3\v@margin}\rule[-0.4ex]{17.25cm}{0.5pt}}\fi\sectionnamefont}*} 
 
 %%%%%% redefine the subsection command
 \renewcommand{\subsection}{\@startsection {subsection}{2}{-0.15\v@margin}%
