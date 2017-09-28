@@ -1,9 +1,11 @@
 \documentclass{vitae}
 \usepackage{times}
 \usepackage[hyphens]{url}
+\usepackage{enumitem}
 
 \renewcommand{\labelitemi}{$\diamond$}
 \newcommand{\UIC}{University of Illinois at Chicago}
+\setlist[description]{leftmargin=0pt,labelindent=0pt}
 
 \author{Peter Snyder}
 
@@ -18,7 +20,11 @@
 
   \section{Research Interests}
   \begin{description}
-    \item{Computer Security, Privacy, and Cryptography}
+  \item{\noindent I research web security and privacy, including browser hardening techniques and
+  measuring how the growth of the Web API has impacted user privacy and security.
+  I use this research to build access control systems for browser functionally
+  and tools for deploying web applications that provide stronger
+  privacy and security guarantees for users.}
   \end{description}
 
   \section{Education}
@@ -32,25 +38,40 @@
   \end{description}
 
   \bibliographystyle{vitae}
+    \nocite{snyder2017browser}
+    \nocite{snyder2017doxing}
     \nocite{snyder2017cdf}
     \nocite{snyder2016browser}
+    \nocite{snyder2016characterizing}
+    \nocite{snyder2016phishing}
     \nocite{snyder2015no}
     \nocite{clark2015saw}
     \nocite{snyder2014yao}
+    \nocite{snyder2014cloudsweeper}
     \nocite{snyder2013cloudsweeper}
   \bibliography{cv}
 
-  \section{Research}
+  \section{Other Contributions}
   \begin{description}
 
-    \item[Measuring the Amount and Costs of Browser Complexity] ~\\
-    The modern web has seen an explosion in the number of browser features implemented and available to web developers.  This research measures the increased complexity imposed by these new features, the usefulness of this added complexity to users and web authors, and the cost these new features entail to user privacy and security.
+    \item[Fingerprinting Protection Improvements in Brave Browser] \hfill \textbf{https://github.com/brave/browser-laptop}\\
+    Improved the technique used to block fingerprinting related Web API methods
+    to reduce the impact on non-fingerprinting related code, and expanded the set
+    of blocked Web API methods to cover five more, previously allowed, methods used for fingerprinting users. 
 
-    \item[CRISP: Abstractions for Security Guarantees in Interactive Web Applications] ~\\
-    Web users currently have few guarantees about the security properties of websites they visit, and the frequency and sophistication of attacks on web servers means that a site that is benign one day can become malicious the next, all invisibly to the client.  This project investigates new web systems that prioritize client security and code predictability at minimal cost to web author expressivity.
+    \item[Dataset of Web API Use in Alexa 10k] \hfill \textbf{http://imdc.datcat.org/collection/1-0723-8}\\
+    Public dataset documenting what Web API features are used
+    on popular websites, both in a default web browser configuration, and with
+    advertising blocking, and tracking blocking, extensions installed.
+
+    \item[CDF: Abstractions for Security Guarantees in Interactive Web Applications] \hfill \textbf{https://github.com/bitslab/cdf}\\
+    Built client and server-side tools for implementing CDF, a document format for building dynamic, interactive web applications
+    that provide increased security and privacy guarantees for users of commodity web browsers.
 
     \item[Cloudsweeper] \hfill \textbf{https://cloudsweeper.cs.uic.edu}\\
-    Developed tool to measure and mitigate the frequency of plaintext password sharing in Gmail archives. The public tool allows users to redact or encrypt-in-place found passwords. The site has had over 2,500 users and has secured over 38,000 messages.
+    Developed tool to measure and mitigate the frequency of plaintext password sharing in Gmail archives. The public
+    tool allows users to redact or encrypt-in-place found passwords. The site has had over 2,500 users and has
+    secured over 38,000 messages.
   \end{description}
 
   \section{Related Activities}
@@ -65,9 +86,6 @@
     \item[Security Advisor] \hfill \textbf{2015 - 2017}\\
     Advisor for web and mobile application security for citizen reporting group TIMBY.org
 
-    \item[External Reviewer] \hfill \textbf{2017}\\
-    Reviewed papers for USENIX Security, 2017
-
     \item[President] \hfill \textbf{2013 - 2014, 2015 - 2016}\\
     UIC Computer Science Graduate Student Association
 
@@ -78,40 +96,19 @@
     Department of Information Engineering at the Chinese University of Hong Kong\\
     No Please, After You: Detecting Fraud in Affiliate Marketing Networks
 
-    \item[External Reviewer] \hfill \textbf{2015}\\
-    Reviewed papers for IEEE Symposium on Security and Privacy 2016
-
-    \item[External Reviewer] \hfill \textbf{2015}\\
-    Reviewed papers for ACM Conference on Computer and Communications Security 2016
-
-    \item[External Reviewer] \hfill \textbf{2014}\\
-    Reviewed 3 papers for IEEE Symposium on Security and Privacy 2015
-
     \item[Invited Talk] \hfill \textbf{2014}\\
     No Secrets: Journalism in the Age of Surveillance\\
     Surveillance Defense: Practical Steps for Security and Privacy
 
-    \item[Invited Talk] \hfill \textbf{2013}\\
-    University of Illinois at Chicago Security Lunch\\
-    Presented Dyer, Kevin P., et al. "Protocol misidentification made easy with format-transforming encryption."
-
-    \item[Invited Talk] \hfill \textbf{2013}\\
-    University of Illinois at Chicago Security Lunch\\
-    Presented AlFardan, Nadhem J., and Kenneth G. Paterson. "Lucky Thirteen: Breaking the TLS and DTLS Record Protocols."
-
-    \item[Invited Talk] \hfill \textbf{2013}\\
-    University of Illinois at Chicago Advanced Programming Seminar Series\\
-    Mirthful Mashups: Building Scaleable Web Applications
-
     \item[1st Place] \hfill \textbf{2013}\\
-    Symantec Cyber Challenge Competition, a capture the flag style security competition.  Competed in Symantec's national competition.
-
-    \item[External Reviewer] \hfill \textbf{2013}\\
-    Reviewed 2 papers for Network and Distributed System Security Symposium (NDSS)
-
-    \item[Invited Talk] \hfill \textbf{2012}\\
-    University of Illinois at Chicago Advanced Programming Seminar Series\\
-    Modern Web Development: From Angle Brackets to WebSockets
+    Symantec Cyber Challenge Competition, a capture the flag style security competition.
   \end{description}
 
+  \section{External Reviewer}
+  \begin{description}
+    \item [2017] USENIX Security
+    \item [2016] S\&P, CCS
+    \item [2015] CCS
+    \item [2013] NDSS
+  \end{description}
 \end{document}

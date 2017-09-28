@@ -2,7 +2,7 @@ PWD /Users/snyderp/Documents/CV
 INPUT /usr/local/texlive/2017/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT cv.tex
+INPUT /Users/snyderp/Documents/CV/cv.tex
 OUTPUT cv.log
 INPUT vitae.cls
 INPUT vitae.cls
@@ -14,6 +14,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/times.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/times.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT cv.aux
 INPUT cv.aux
 OUTPUT cv.aux
