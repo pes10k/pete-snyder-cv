@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex cv"] 1506700013 "cv.aux" "cv.bbl" "cv" 1506951809
+["bibtex cv"] 1506952433 "cv.aux" "cv.bbl" "cv" 1506952490
   "./vitae.bst" 1447881905 33701 a893c550fdd4b4a3bc7a8d1fe51d8f03 ""
-  "cv.aux" 1506951808 736 9b6eab9a6524afcb7b3577113618770e ""
-  "cv.bib" 1506627192 3068 ed3aa2a680d6160abbdbe1b306f398f9 ""
+  "cv.aux" 1506952490 736 9b6eab9a6524afcb7b3577113618770e ""
+  "cv.bib" 1506952051 3067 e7fba8f53bfbea05bc0716b812f3d40a ""
   (generated)
-  "cv.bbl"
   "cv.blg"
-["pdflatex"] 1506951808 "cv.tex" "cv.pdf" "cv" 1506951809
+  "cv.bbl"
+["pdflatex"] 1506952489 "cv.tex" "cv.pdf" "cv" 1506952490
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1480098689 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -16,6 +16,7 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm" 1480098689 2680 312a2d12b1f1df8ee0212e7ba1962402 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm" 1480098689 2288 f478fc8fed18759effb59f3dad7f3084 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm" 1480098689 4640 532ca3305aad10cc01d769f3f91f1029 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1480098733 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1480098746 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1480098746 46026 6dab18b61c907687b520c72847215a68 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb" 1480098746 45458 a3faba884469519614ca56ba5f6b1de1 ""
@@ -33,11 +34,11 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1504734675 2377423 b49deb3b157196f7fd768f64eb1c54bb ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1503891230 4130344 161456e8e84367b30a6c124e2aba7d29 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "cv.aux" 1506951808 736 9b6eab9a6524afcb7b3577113618770e ""
-  "cv.bbl" 1506951808 5200 58a9153f6b8326897f9e85f643a487f2 "bibtex cv"
-  "cv.tex" 1506951807 4593 c9441571ac74a85540ee9c47456c48b0 ""
+  "cv.aux" 1506952490 736 9b6eab9a6524afcb7b3577113618770e ""
+  "cv.bbl" 1506952490 5198 895aeacbb73918e569c914686aa70adb "bibtex cv"
+  "cv.tex" 1506952487 4631 2af8737d20432c2939b8cac938316cc3 ""
   "vitae.cls" 1500583219 7115 453c64052c7916c8e79f80515be7240b ""
   (generated)
-  "cv.pdf"
   "cv.aux"
   "cv.log"
+  "cv.pdf"
