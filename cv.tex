@@ -1,4 +1,4 @@
-\documentclass{vitae}
+\documentclass[wideaddress]{vitae}
 \usepackage{times}
 \usepackage[hyphens]{url}
 \usepackage{enumitem}
@@ -10,10 +10,8 @@
 
 \author{Peter Snyder}
 
-\address{Department of Computer Science\\
-    \UIC\\
-    Chicago, IL 60607 \\
-    psnyde2@uic.edu}
+\address{Department of Computer Science, \UIC\\
+psnyde2@uic.edu}
 
 \begin{document}
 
@@ -21,18 +19,20 @@
 
   \section{Research Interests}
   \begin{description}
-      \item{\noindent I research web security and privacy, including browser hardening techniques and
-          measuring how the growth of the Web API has impacted user privacy and security.
+      \item{\noindent I research web security and privacy, including browser
+          hardening techniques, fingerprinting detection and evasion,
+          and measuring how the growth of the Web API has impacted privacy and security.
           This research supports my work building access control systems for
-          browser functionality and tools for deploying web applications that
-          provide stronger privacy and security guarantees for users.}
+          browser functionality, developing new web application systems
+          that provide client-enforced privacy and security guarantees,
+          and measuring the harms of online privacy violations.}
   \end{description}
 
   \section{Education}
   \begin{description}
     \item[Ph.D.~Computer Science] \hfill \textbf{2012 - Present}\\
     University of Illinois at Chicago, Chicago, IL\\
-    Expected graduation date: Spring 2018
+    Expected graduation: Spring 2018
 
     \item[B.A.~Political Science] \hfill \textbf{2002 - 2006}~\\
     Lawrence University, Appleton, WI
@@ -52,34 +52,57 @@
     \nocite{snyder2013cloudsweeper}
   \bibliography{cv}
 
+  \section{External Reviewer}
+  \begin{tabular}{lllllll}
+    \textbf{2017} & USENIX Security, NDSS &&&& \textbf{2015} & CCS \\
+    \textbf{2016} & S\&P, CCS             &&&& \textbf{2013} & NDSS \\
+  \end{tabular}
+
   \section{Other Contributions}
   \begin{description}
 
-      \item[Fingerprinting Protection Improvements in Brave Browser] \hfill \textbf{\url{https://github.com/brave/browser-laptop}}\\
+    \item[Fingerprinting Protection Improvements in Brave Browser] \hfill \textbf{\url{https://github.com/brave/browser-laptop}}\\
     Improved the technique used to block fingerprinting related Web API methods
-    to reduce the impact on non-fingerprinting related code, and expanded the set
-    of blocked Web API methods to cover five more, previously allowed, methods used for fingerprinting users.
+    to reduce the impact on non-fingerprinting related code, expanded the set
+    of blocked Web API methods to cover additional fingerprinting methods, and
+    worked with Brave engineers to address vulnerabilities in
+    the browser's fingerprinting-blocking technique.
 
-\item[Dataset of Web API Use in Alexa 10k] \hfill \textbf{\url{http://imdc.datcat.org/collection/1-0723-8}}\\
-    Public dataset documenting what Web API features are used
-    on popular websites, both in a default web browser configuration, and with
-    advertising blocking, and tracking blocking, extensions installed.
+    \item[Web API Hardening Browser Extension] \hfill \textbf{\url{https://github.com/snyderp/web-api-manager}}\\
+    Developed Firefox and Chrome extension to improve web privacy and security by
+    controlling what browser functionality web sites can access. Web API
+    access controls can be defined globally, or on a per-host level,
+    to allow only trusted hosts access to privacy-threatening
+    functionality, such as high resolution timers, WebGL, and WebRTC.
 
-\item[CDF: Abstractions for Security Guarantees in Interactive Web Applications] \hfill \textbf{\url{https://github.com/bitslab/cdf}}\\
+    \item[Dataset of Web API Use in Alexa 10k] \hfill \textbf{\url{http://imdc.datcat.org/collection/1-0723-8}}\\
+    Public dataset documenting what Web API features popular sites use,
+    both in a default web browser configuration, and with
+    advertising and tracking blocking extensions installed.
+
+    \item[CDF: Abstractions for Security Guarantees in Interactive Web Applications] \hfill \textbf{\url{https://github.com/bitslab/cdf}}\\
     Built client and server-side tools for implementing CDF, a document format for building dynamic, interactive web applications
     that provide increased security and privacy guarantees for users of commodity web browsers.
 
-\item[Cloudsweeper] \hfill \textbf{\url{https://cloudsweeper.cs.uic.edu}}\\
-    Developed tool to measure and mitigate the frequency of plaintext password sharing in Gmail archives. The public
-    tool allows users to redact or encrypt-in-place found passwords. The site has had over 2,500 users and has
+    \item[Cloudsweeper] \hfill \textbf{\url{https://cloudsweeper.cs.uic.edu}}\\
+    Developed tool to measure and mitigate plaintext password sharing in Gmail archives. The
+    tool allows users to redact or encrypt found passwords to reduce the harm
+    of account compromise. The site has served over 2,500 users and has
     secured over 38,000 messages.
   \end{description}
 
   \section{Related Activities}
   \begin{description}
 
+    \item[Finalist] \hfill \textbf{2017}\\
+    CSAW Applied Research Competition for work on browser privacy and security
+
     \item[Lead Instructor] \hfill \textbf{2017}\\
-        CS 342: Software Design - \url{https://www.cs.uic.edu/~psnyder/cs342-summer2017/}
+    CS 342: Software Design - \url{https://www.cs.uic.edu/~psnyder/cs342-summer2017/}
+
+    \item[Invited Talk] \hfill \textbf{2017}\\
+    Tandon School of Engineering, New York University\\
+    Fifteen Minutes of Unwanted Fame: Detecting and Characterizing Doxing
 
     \item[IGERT Fellow] \hfill \textbf{2013 - 2017}\\
     Electronic Security and Privacy IGERT Fellow
@@ -94,7 +117,7 @@
     UIC Cryptography and Privacy Reading Group
 
     \item[Invited Talk] \hfill \textbf{2015}\\
-    Department of Information Engineering at the Chinese University of Hong Kong\\
+    Department of Information Engineering, Chinese University of Hong Kong\\
     No Please, After You: Detecting Fraud in Affiliate Marketing Networks
 
     \item[Invited Talk] \hfill \textbf{2014}\\
@@ -105,11 +128,4 @@
     Symantec Cyber Challenge Competition, a capture the flag style security competition.
   \end{description}
 
-  \section{External Reviewer}
-  \begin{description}
-    \item [2017] USENIX Security, NDSS
-    \item [2016] S\&P, CCS
-    \item [2015] CCS
-    \item [2013] NDSS
-  \end{description}
 \end{document}
