@@ -2,43 +2,137 @@
 \usepackage{times}
 \usepackage[hyphens]{url}
 \usepackage{enumitem}
+\usepackage{hyperref}
+
 
 \urlstyle{same}
 \renewcommand{\labelitemi}{$\diamond$}
-\newcommand{\UIC}{University of Illinois at Chicago}
 \setlist[description]{leftmargin=0pt,labelindent=0pt}
 
-\author{Peter Snyder}
+\author{Peter E. Snyder}
 
-\address{Department of Computer Science, \UIC\\
-psnyde2@uic.edu}
+\address{snyderp@gmail.com -- \url{https://www.peteresnyder.com}}
 
 \begin{document}
 
   \maketitle
 
-  \section{Research Interests}
+  \section{Interests}
   \begin{description}
-      \item{\noindent I research web security and privacy, including browser
-          hardening techniques, fingerprinting detection and evasion,
-          and measuring how the growth of the Web API has impacted privacy and security.
-          This research supports my work building access control systems for
-          browser functionality, developing new web application systems
-          that provide client-enforced privacy and security guarantees,
-          and measuring the harms of online privacy violations.}
+    \item{\noindent I am interested in studying and improving online privacy, through research,
+    policy, and product development. I have over 10 years experience working on
+    internet privacy, and over 15 years in software developement. I currently
+    lead the research and engineering privacy team at Brave Software,
+    a privacy-focused startup making a Web browser with over 50 million users, where I also
+    conduct and oversee research projects published at top privacy and security conferences.}
+
+    \item{\noindent I have also done significant privacy work in technical
+    standards bodies, both chairing privacy-related committees and drafting
+    privacy-related specifications.}
+
+    \item{\noindent I am primarily interested in positions that would allow me to work from Chicago,
+    where I could continue working on improving privacy. I am particularly interested
+    in policy and research oriented opportunities.}
+  \end{description}
+
+  \section{Industry Experience}
+  \begin{description}
+    \item[Vice President of Privacy Engineering \& Senior Privacy Researcher] \hfill \textbf{2023 - Present}\\
+    Brave Software, San Francisco, CA
+
+    \item[Senior Director of Privacy \& Senior Privacy Researcher] \hfill \textbf{2022 - 2023}\\
+    Brave Software, San Francisco, CA
+
+    \item[Senior Privacy Researcher] \hfill \textbf{2020 - 2022}\\
+    Brave Software, San Francisco, CA
+
+    \item[Privacy Researcher] \hfill \textbf{2018 - 2020}\\
+    Brave Software, San Francisco, CA
   \end{description}
 
   \section{Education}
   \begin{description}
-    \item[Ph.D.~Computer Science] \hfill \textbf{2012 - Present}\\
-    University of Illinois at Chicago, Chicago, IL\\
-    Expected graduation: Spring 2018
+    \item[Ph.D.~Computer Science] \hfill \textbf{2012 - 2018}\\
+    University of Illinois at Chicago, Chicago, IL
+    % \item[B.A.~Political Science] \hfill \textbf{2002 - 2006}~\\
+    % Lawrence University, Appleton, WI
+  \end{description}
 
-    \item[B.A.~Political Science] \hfill \textbf{2002 - 2006}~\\
-    Lawrence University, Appleton, WI
+  \section{Roles and Selected Achievements}
+
+  \subsection{Privacy in Technical Standards and Standards Bodies}
+  \begin{description}
+    \item{\noindent I have contributed to and lead privacy efforts in multiple
+    prominant standards bodies.}
+
+    \item{\noindent In the W3C I have co-chaired the Privacy Interest
+    Group (PING) for three years, the group responsible for reviewing the privacy
+    impact of proposed specifications. As a co-chair of PING, I have reviewed
+    dozens of proposals and worked with (and occasionally against) browser
+    developers from Google, Apple, Mozilla, and Microsoft to protect
+    user privacy.}
+
+    \item{\noindent I have also co-authored multiple privacy-improving
+    proposals, including \href{https://datatracker.ietf.org/doc/draft-dss-star/}{STAR}--a
+    lightweight cryptographic system for large scare internet measurements--
+    and \href{https://datatracker.ietf.org/doc/draft-sahib-httpbis-off-the-record/}{Request Off-the-Record}--a
+    proposed HTTP and browser enhancement to protect the privacy and safety
+    of victims of intimate partner violence.}
+  \end{description}
+
+  \subsection{Privacy in Policy}
+  \begin{description}
+    \item{\noindent I have done significant work at the intersection of public
+    policy and privacy engineering. In some cases, this has been in the development
+    of technical features to help users assert legal rights privided by existing regulations.
+    For example, I am a co-author of the \href{https://globalprivacycontrol.org/}{Global Privacy Control} (GPC)
+    specification, a proposed standard to allow users to easily
+    assert the opt-out rights described in legislation like the California Consumer Privacy Act.
+    GPC is used by over 50 million users, and is included in privacy focused
+    Web browsers like Brave, DuckDuckGo, and Firefox.}
+
+    \item{\noindent I have also been invovled with policy and regulator
+    investigations of Google and Apple, and the privacy and competitiveness
+    implications of their "Privacy Sandbox" and iOS browser restrictions.
+    I've written a great deal about the negative impact these
+    systems have on the openness of the Web, both for \href{https://brave.com/web-standards-at-brave/}{popular audiences},
+    and for regulators like in United States and UK.}
+  \end{description}
+
+  \subsection{Privacy in Product Design}
+  \begin{description}
+    \item{\noindent I have designed and overseen the implementation of a wide
+    range of privacy features at Brave Browser Software. I have also managed
+    the shipping and maintiance of these features to over 50m internet users.}
+
+    \item{\noindent The main focus of my work at Brave is to combine and productize
+    insights and approaches from privacy research from academia. A partial
+    list of such features I developed at Brave include Brave's
+    \href{https://brave.com/privacy-updates/3-fingerprint-randomization/}{unique approach to protecting users from browser fingerprinting},
+    \href{https://brave.com/privacy-updates/7-ephemeral-storage/}{best-in-class protections against third-party tracking},
+    \href{https://brave.com/privacy-updates/19-star/}{efficent and scaleable system for product analytics}, and
+    \href{https://brave.com/privacy-updates/13-pool-party-side-channels/}{defenses against colluding, malicious websites}.
+    Each of these features were unique among popular browsers when I designed
+    them at Brave, and in several cases they have been adopted by larger
+    browsers like Firefox and Safari.}
   \end{description}
 
   \bibliographystyle{vitae}
+    \nocite{chouaki2023search}
+    \nocite{mcquistin2023psl}
+    \nocite{snyder2023poolparty}
+    \nocite{randall2022uid}
+    \nocite{davidson2022star}
+    \nocite{smith2022blocked}
+    \nocite{jueckstock2022stateful}
+    \nocite{smith2021sugarcoat}
+    \nocite{jueckstock2021measurements}
+    \nocite{chen2021javascriptsigs}
+    \nocite{snyder2020filters}
+    \nocite{sjosten2020generation}
+    \nocite{papadopoulos2020paywalls}
+    \nocite{iqbal2020adgraph}
+    \nocite{ghasemisharif2019speedreader}
     \nocite{snyder2017browser}
     \nocite{snyder2017doxing}
     \nocite{snyder2017cdf}
@@ -52,81 +146,100 @@ psnyde2@uic.edu}
     \nocite{snyder2013cloudsweeper}
   \bibliography{cv}
 
-  \section{External Reviewer}
-  \begin{tabular}{lllllll}
-    \textbf{2018} & CHI Late Breaking Work \\
-    \textbf{2017} & USENIX Security, NDSS &&&& \textbf{2015} & CCS \\
-    \textbf{2016} & S\&P, CCS             &&&& \textbf{2013} & NDSS \\
+  \section{Reviewing and Academic Community Involvement}
+  \subsection{Program Committee}
+  \begin{tabular}{llll}
+    \textbf{2024} & USENIX, S\&P &           \textbf{2020} & WWW, MADWeb \\
+    \textbf{2023} & USENIX, S\&P, MADWeb &   \textbf{2019} & MadWeb, CSAW \\
+    \textbf{2022} & USENIX, WWW, MADWeb, PEPR & \textbf{2018} & CSAW, ECRIME \\
+    \textbf{2021} & USENIX, WWW, MADWeb, CCS \\
   \end{tabular}
 
-  \section{Other Contributions}
+  \subsection{External Reviewer}
+  \begin{tabular}{llll}
+    \textbf{2020} & SIGCOMM, CCR &                    \textbf{2016} & S\&P, CCS \\
+    \textbf{2019} & Journal of Cybersecurity &        \textbf{2015} & CCS \\
+    \textbf{2018} & CHI Late Breaking Work, SIGCOMM & \textbf{2013} & NDSS \\
+    \textbf{2017} & USENIX Security, NDSS \\
+  \end{tabular}
+
+  \section{Teaching Experience}
   \begin{description}
-
-    \item[Fingerprinting Protection Improvements in Brave Browser] \hfill \textbf{\url{https://github.com/brave/browser-laptop}}\\
-    Improved the technique used to block fingerprinting related Web API methods
-    to reduce the impact on non-fingerprinting related code, expanded the set
-    of blocked Web API methods to cover additional fingerprinting methods, and
-    worked with Brave engineers to address vulnerabilities in
-    the browser's fingerprinting-blocking technique.
-
-    \item[Web API Hardening Browser Extension] \hfill \textbf{\url{https://github.com/snyderp/web-api-manager}}\\
-    Developed Firefox and Chrome extension to improve web privacy and security by
-    controlling what browser functionality web sites can access. Web API
-    access controls can be defined globally, or on a per-host level,
-    to allow only trusted hosts access to privacy-threatening
-    functionality, such as high resolution timers, WebGL, and WebRTC.
-
-    \item[Dataset of Web API Use in Alexa 10k] \hfill \textbf{\url{http://imdc.datcat.org/collection/1-0723-8}}\\
-    Public dataset documenting what Web API features popular sites use,
-    both in a default web browser configuration, and with
-    advertising and tracking blocking extensions installed.
-
-    \item[CDF: Abstractions for Security Guarantees in Interactive Web Applications] \hfill \textbf{\url{https://github.com/bitslab/cdf}}\\
-    Built client and server-side tools for implementing CDF, a document format for building dynamic, interactive web applications
-    that provide increased security and privacy guarantees for users of commodity web browsers.
-
-    \item[Cloudsweeper] \hfill \textbf{\url{https://cloudsweeper.cs.uic.edu}}\\
-    Developed tool to measure and mitigate plaintext password sharing in Gmail archives. The
-    tool allows users to redact or encrypt found passwords to reduce the harm
-    of account compromise. The site has served over 2,500 users and has
-    secured over 38,000 messages.
-  \end{description}
-
-  \section{Related Activities}
-  \begin{description}
-
-    \item[Finalist] \hfill \textbf{2017}\\
-    CSAW Applied Research Competition for work on browser privacy and security
-
     \item[Lead Instructor] \hfill \textbf{2017}\\
-    CS 342: Software Design - \url{https://www.cs.uic.edu/~psnyder/cs342-summer2017/}
+    CS342: Software Design, University of Illinois, Chicago % - \url{https://www.cs.uic.edu/~psnyder/cs342-summer2017/}
 
-    \item[Invited Talk] \hfill \textbf{2017}\\
-    Tandon School of Engineering, New York University\\
-    Fifteen Minutes of Unwanted Fame: Detecting and Characterizing Doxing
-
-    \item[IGERT Fellow] \hfill \textbf{2013 - 2017}\\
-    Electronic Security and Privacy IGERT Fellow
-
-    \item[Security Advisor] \hfill \textbf{2015 - 2017}\\
-    Advisor for web and mobile application security for citizen reporting group TIMBY.org
-
-    \item[President] \hfill \textbf{2013 - 2014, 2015 - 2016}\\
-    UIC Computer Science Graduate Student Association
-
-    \item[Founder] \hfill \textbf{2015 - 2016}\\
-    UIC Cryptography and Privacy Reading Group
-
-    \item[Invited Talk] \hfill \textbf{2015}\\
-    Department of Information Engineering, Chinese University of Hong Kong\\
-    No Please, After You: Detecting Fraud in Affiliate Marketing Networks
-
-    \item[Invited Talk] \hfill \textbf{2014}\\
-    No Secrets: Journalism in the Age of Surveillance\\
-    Surveillance Defense: Practical Steps for Security and Privacy
-
-    \item[1st Place] \hfill \textbf{2013}\\
-    Symantec Cyber Challenge Competition, a capture the flag style security competition.
+    \item[Teaching Assistant] \hfill \textbf{2017, 2015}\\
+    CS450: Software Design, University of Illinois, Chicago % - \url{https://www.cs.uic.edu/~ckanich/cs450/s17/}
   \end{description}
 
+
+  % \section{Other Contributions}
+  % \begin{description}
+
+  %   \item[Fingerprinting Protection Improvements in Brave Browser] \hfill \textbf{\url{https://github.com/brave/browser-laptop}}\\
+  %   Improved the technique used to block fingerprinting related Web API methods
+  %   to reduce the impact on non-fingerprinting related code, expanded the set
+  %   of blocked Web API methods to cover additional fingerprinting methods, and
+  %   worked with Brave engineers to address vulnerabilities in
+  %   the browser's fingerprinting-blocking technique.
+
+  %   \item[Web API Hardening Browser Extension] \hfill \textbf{\url{https://github.com/snyderp/web-api-manager}}\\
+  %   Developed Firefox and Chrome extension to improve web privacy and security by
+  %   controlling what browser functionality web sites can access. Web API
+  %   access controls can be defined globally, or on a per-host level,
+  %   to allow only trusted hosts access to privacy-threatening
+  %   functionality, such as high resolution timers, WebGL, and WebRTC.
+
+  %   \item[Dataset of Web API Use in Alexa 10k] \hfill \textbf{\url{http://imdc.datcat.org/collection/1-0723-8}}\\
+  %   Public dataset documenting what Web API features popular sites use,
+  %   both in a default web browser configuration, and with
+  %   advertising and tracking blocking extensions installed.
+
+  %   \item[CDF: Abstractions for Security Guarantees in Interactive Web Applications] \hfill \textbf{\url{https://github.com/bitslab/cdf}}\\
+  %   Built client and server-side tools for implementing CDF, a document format for building dynamic, interactive web applications
+  %   that provide increased security and privacy guarantees for users of commodity web browsers.
+
+  %   \item[Cloudsweeper] \hfill \textbf{\url{https://cloudsweeper.cs.uic.edu}}\\
+  %   Developed tool to measure and mitigate plaintext password sharing in Gmail archives. The
+  %   tool allows users to redact or encrypt found passwords to reduce the harm
+  %   of account compromise. The site has served over 2,500 users and has
+  %   secured over 38,000 messages.
+  % \end{description}
+
+  % \section{Related Activities}
+  % \begin{description}
+
+  %   \item[Finalist] \hfill \textbf{2017}\\
+  %   CSAW Applied Research Competition for work on browser privacy and security
+
+  %   \item[Lead Instructor] \hfill \textbf{2017}\\
+  %   CS 342: Software Design - \url{https://www.cs.uic.edu/~psnyder/cs342-summer2017/}
+
+  %   \item[Invited Talk] \hfill \textbf{2017}\\
+  %   Tandon School of Engineering, New York University\\
+  %   Fifteen Minutes of Unwanted Fame: Detecting and Characterizing Doxing
+
+  %   \item[IGERT Fellow] \hfill \textbf{2013 - 2017}\\
+  %   Electronic Security and Privacy IGERT Fellow
+
+  %   \item[Security Advisor] \hfill \textbf{2015 - 2017}\\
+  %   Advisor for web and mobile application security for citizen reporting group TIMBY.org
+
+  %   \item[President] \hfill \textbf{2013 - 2014, 2015 - 2016}\\
+  %   UIC Computer Science Graduate Student Association
+
+  %   \item[Founder] \hfill \textbf{2015 - 2016}\\
+  %   UIC Cryptography and Privacy Reading Group
+
+  %   \item[Invited Talk] \hfill \textbf{2015}\\
+  %   Department of Information Engineering, Chinese University of Hong Kong\\
+  %   No Please, After You: Detecting Fraud in Affiliate Marketing Networks
+
+  %   \item[Invited Talk] \hfill \textbf{2014}\\
+  %   No Secrets: Journalism in the Age of Surveillance\\
+  %   Surveillance Defense: Practical Steps for Security and Privacy
+
+  %   \item[1st Place] \hfill \textbf{2013}\\
+  %   Symantec Cyber Challenge Competition, a capture the flag style security competition.
+  % \end{description}
 \end{document}
